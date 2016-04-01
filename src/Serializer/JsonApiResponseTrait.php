@@ -112,7 +112,7 @@ trait JsonApiResponseTrait
     private function response($json)
     {
         return (new HttpFoundationFactory())
-            ->createResponse($this->addHeaders(new \NilPortugues\Api\JsonApi\Http\Message\Response($json)));
+            ->createResponse($this->addHeaders(new \NilPortugues\Api\JsonApi\Http\Response\Response($json)));
     }
 
     /**
